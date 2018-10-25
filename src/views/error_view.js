@@ -5,7 +5,7 @@ const ErrorView = function (container) {
 };
 
 ErrorView.prototype.bindEvents = function () {
-  PubSub.subscribe('Activity:error', (evt) => {
+  PubSub.subscribe("Munros:error", (evt) => {
     const err = evt.detail;
     this.render(err);
   });
@@ -17,7 +17,7 @@ ErrorView.prototype.render = function (err) {
 
   this.container.innerHTML = '';
   const errorMessage = document.createElement('p');
-  errorMessage.textContent = 'Oops! Something seems to have gone wrong.';
+  errorMessage.textContent = 'Oops! Harambe has noticed that something has gone wrong.';
   this.container.appendChild(errorMessage);
 };
 

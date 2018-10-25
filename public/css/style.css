@@ -1,6 +1,8 @@
 body {
   font-family: 'Slabo 27px', serif;
-  background-image: url("./munro.jpg");
+  background-image: url("./munro_copy.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -11,12 +13,36 @@ h1 {
 
 label {
   color: white;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
 }
 
 select {
   position: relative;
   font-family: Arial;
-  color: blue;
+  color: black;
+  display: block;
+  margin: auto auto;
+  font-size: 20px;
+}
+
+div h2 {
+  color: white;
+  font-size: 35px;
+}
+
+div ul {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p {
+  color: white;
+  font-size: 100px;
+  text-align: center;
 }
 /* select select {
   display: none; /*hide original SELECT element:*/ */
